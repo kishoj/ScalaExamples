@@ -1,0 +1,5 @@
+package patterns.functional.cakepattern.services
+
+import patterns.functional.cakepattern.repository.CassandraRepository
+
+object CassandraEmployeeService extends EmployeeService with CassandraRepository
