@@ -35,6 +35,8 @@ object Sum {
   def main(args: Array[String]): Unit = {
     val numbers = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
+    numbers.filter(_ % 2 != 0).map(println)
+
     println("Sum using method1: " + Sum.method1(numbers))
     println("Sum using method2: " + Sum.method2(numbers))
     println("Sum using method3: " + Sum.method3(numbers))
